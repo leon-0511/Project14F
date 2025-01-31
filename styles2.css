@@ -1,0 +1,120 @@
+body {
+  background-color: #D4DE94;
+  background-image: url('page_bg.jpg');
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+  margin: 0;
+}
+
+.book-container {
+  display: flex; /* Flexbox to arrange the items side by side */
+  width: 100%; /* Make the container take up 80% of the page */
+  height: 95%; /* Set height to 80% of the viewport height */
+  margin-top: 5vh;
+}
+
+.page-container {
+  display: flex; /* Flexbox to arrange the items side by side */
+  width: 100%; /* Make the container take up 80% of the page */
+  height: 95%; /* Set height to 80% of the viewport height */
+}
+
+.page {
+  flex: 1; /* Make the left page take up equal space */
+  image-rendering: pixelated; /* Disable anti-aliasing */
+  -webkit-image-rendering: pixelated; /* For Safari */
+  -moz-image-rendering: -moz-crisp-edges; /* For Firefox */
+  -o-image-rendering: crisp-edges; /* For Opera */
+  image-rendering: crisp-edges; /* Non-standard */
+  border: 1px dashed #9C8E54;
+  
+}
+
+.page-content {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.page-content.visible {
+  opacity: 1;
+}
+h1 {
+  margin-left: 3vw;
+  font-family: "Emilys Candy", serif;
+  font-weight: bolder;
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin-left: 3vw;
+  font-family: "Emilys Candy", serif;
+  font-size: 18px
+}
+
+.divider {
+  width: 22px; /* Width of the divider line */
+  background-color: #9C8E54; /* Color of the divider line */
+  height: auto; /* Full height of the containers */
+  opacity: 25%;
+}
+
+.emilys-candy-regular {
+  font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Left page */
+#page1 {
+  left: 0;
+  transform-origin: right center; /* Center of the left edge */
+  border-right: none;
+}
+
+/* Right page */
+#page2 {
+  right: 0;
+  transform-origin: left center; /* Center of the right edge */
+  border-left: none;
+}
+
+/* Hide content while animation runs */
+.page-content-hidden {
+  visibility: hidden;
+}
+
+/* Flip forward (to the center) animation for the right page */
+.flip-to-center-forward {
+  animation: flip-to-center-forward 1s forwards;
+}
+
+/* Flip backward (to the center) animation for the left page */
+.flip-to-center-backward {
+  animation: flip-to-center-backward 1s forwards;
+}
+
+/* Keyframes for flip animations */
+@keyframes flip-to-center-forward {
+  0% {
+      transform: rotateY(0deg); /* Start in normal position */
+  }
+  100% {
+      transform: rotateY(180deg); /* Rotate clockwise for the left page */
+  }
+}
+
+@keyframes flip-to-center-backward {
+  0% {
+      transform: rotateY(0deg); /* Start in normal position */
+  }
+  100% {
+      transform: rotateY(-180deg); /* Rotate counterclockwise for the right page */
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
