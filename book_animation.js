@@ -1,3 +1,22 @@
+/*        ,gggg,     ,ggggggg,    _,gggggg,_      ,ggg, ,ggggggg,
+*       d8" "8I   ,dP""""""Y8b ,d8P""d8P"Y8b,   dP""Y8,8P"""""Y8b
+*       88  ,dP   d8'    a  Y8,d8'   Y8   "8b,dPYb, `8dP'     `88
+*    8888888P"    88     "Y8P'd8'    `Ybaaad88P' `"  88'       88
+*       88        `8baaaa     8P       `""""Y8       88        88
+*       88       ,d8P""""     8b            d8       88        88
+*  ,aa,_88       d8"          Y8,          ,8P       88        88
+* dP" "88P       Y8,          `Y8,        ,8P'       88        88
+* Yb,_,d88b,,_   `Yba,,_____,  `Y8b,,__,,d8P'        88        Y8,
+*  "Y8P"  "Y88888  `"Y8888888    `"Y8888P"'          88        `Y8
+* 
+* #######################################################################
+*
+* File: book_animation.js
+* Date: 31/01/2025
+* 
+* #######################################################################
+*/
+
 // Create an array of page images (page001.png to page041.png)
 const pageImages = [];
 for (let i = 1; i <= 12; i++) {
