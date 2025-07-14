@@ -28,9 +28,9 @@ const pageContent = [
                 to them. I say no answer is mistaken, but, to me, the best kind of gift, is the one that comes from the soul, the one that has\
                 effort, love, care, and emotion put into it, and so, i've tried to achieve this through this gift. Initially a Saint Valentine's gift\
                 i sadly couldn't finish, but, i didn't forget it, i was waiting for the time i could turn my full attention to it, and the time is now,\
-                the moment to find A Gift, for the most important person in my world.<br><br>",
-                
-          text: "And what could possibly meet such great standards? Well, virtually anything, but i've decided on making something, with a litle bit of\
+                the moment to find A Gift, for the most important person in my world.\n\n\
+                \
+                And what could possibly meet such great standards? Well, virtually anything, but i've decided on making something, with a litle bit of\
                 personality, a little bit of me, that you can enjoy. This gift comes in the format of a treasure hunt, you are going to have to complete\
                 some (simple) quests, to discover 3 words which will complete the link needed to reach the actual gift."
           
