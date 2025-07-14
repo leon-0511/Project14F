@@ -45,7 +45,7 @@ const pageContent = [
                 This is the binary code:\n1001 1101 1100 0101 0110 0100 0111 0010 0011 1000 0110\n\n\
                 \
                 To decypher this code, you will have to first invert the ones and zeroes (swap ones for zeroes and zeroes for ones), and then use an online binary to text converter, i'll leave you a link to one below:\n",
-          link: "https://www.rapidtables.com/convert/number/binary-to-ascii.html.",
+          link: "https://www.rapidtables.com/convert/number/binary-to-ascii.html",
           linktext: "Binary to Text translator."
       }
   },
