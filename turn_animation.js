@@ -32,22 +32,33 @@ const pageContent = [
                 \
                 And what could possibly meet such great standards? Well, virtually anything, but i've decided on making something, with a litle bit of\
                 personality, a little bit of me, that you can enjoy. This gift comes in the format of a treasure hunt, you are going to have to complete\
-                some (simple) quests, to discover 3 words which will complete the link needed to reach the actual gift."
+                some (simple) quests, to discover 3 words which will complete the link needed to reach the actual gift.\n\n\
+                \
+                At the time of writing this part i haven't made them, but these three quests are a Cypher, a X and a Trivia, they'll be explained in the next\
+                pages. Hope you have fun mwehehehehe >:3."
           
       },
       right: {
-          title: "Page 2",
-          text: "This is the second page. Click to turn the page and see more!"
+          title: "The Cypher Quest",
+          text: "This one is pretty simple, just a warmup, i will give you a code in binary, and you gotta decypher it (translate it) to get the first word you need\
+                but there's a twist, because otherswise it would be a simple google search. The code is in reverse.\n\n\
+                This is the binary code:\n1001 1101 1100 0101 0110 0100 0111 0010 0011 1000 0110\n\n\
+                \
+                To decypher this code, you will have to first invert the ones and zeroes (swap ones for zeroes and zeroes for ones), and then use an online binary to text converter, i'll leave you a link to one below:\n",
+          link: "https://www.rapidtables.com/convert/number/binary-to-ascii.html.",
+          linktext: "Binary to Text translator."
       }
   },
   {
       left: {
-          title: "Page 3",
-          text: "This is the third page, with more content. Keep clicking to turn the page!"
+          title: "The Snookie Quest",
+          text: "Your second quest, a simple snake game >:3. You gotta reach 69 score to find out the next word. The link is here: ",
+          link: "https://leon-0511.github.io/Project14F/snake/snake.html",
+          linktext: "Snookie"
       },
       right: {
-          title: "Page 4",
-          text: "This is the fourth page. You're getting closer to the end!"
+          title: "The Pookie Trivia",
+          text: "This is the last quest, a series of questions (a trivia) you gotta get correctly so you can get the last word needed to complete the link."
       }
   },
   {
@@ -64,6 +75,7 @@ const pageContent = [
 
 // Select the pages in the DOM
 const leftPage = document.getElementById("page1");
+const item = pageContent[0];
 const rightPage = document.getElementById("page2");
 
 // Current page index (starts with 0, so the first pair is page 1 and page 2)
@@ -84,8 +96,29 @@ function changePageContent() {
   leftPage.querySelector(".page-content h1").textContent = content.left.title;
   leftPage.querySelector(".page-content p").textContent = content.left.text;
 
+  if (content.left.link) {
+    const linkElement = document.createElement("a");
+    linkElement.href = content.left.link;
+    linkElement.target = "_blank";
+    linkElement.rel = "noopener noreferrer";
+    linkElement.textContent = content.left.linktext;
+    leftPage.querySelector(".page-content p").appendChild(document.createElement("br"));
+    leftPage.querySelector(".page-content p").appendChild(linkElement);
+  }
+
   rightPage.querySelector(".page-content h1").textContent = content.right.title;
   rightPage.querySelector(".page-content p").textContent = content.right.text;
+  // If a link is present, add it
+
+  if (content.right.link) {
+    const linkElement = document.createElement("a");
+    linkElement.href = content.right.link;
+    linkElement.target = "_blank";
+    linkElement.rel = "noopener noreferrer";
+    linkElement.textContent = content.right.linktext;
+    rightPage.querySelector(".page-content p").appendChild(document.createElement("br"));
+    rightPage.querySelector(".page-content p").appendChild(linkElement);
+  }
 
   // Step 3: Wait for the DOM update and trigger fade-in by adding the 'visible' class
   setTimeout(() => {

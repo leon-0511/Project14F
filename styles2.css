@@ -67,6 +67,7 @@ h1 {
 
 p {
   margin-left: 3vw;
+  margin-right: 3vw;
   font-family: "Emilys Candy", serif;
   font-size: 18px
 }
@@ -89,6 +90,7 @@ p {
   left: 0;
   transform-origin: right center; /* Center of the left edge */
   border-right: none;
+  white-space: pre-line
 }
 
 /* Right page */
@@ -96,6 +98,7 @@ p {
   right: 0;
   transform-origin: left center; /* Center of the right edge */
   border-left: none;
+  white-space: pre-line
 }
 
 /* Hide content while animation runs */
