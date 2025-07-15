@@ -119,7 +119,7 @@ function draw() {
     snake.pop();
   }
 
-  if(score === 69) {
+  if(score === 30) {
     victory();
   }
 
