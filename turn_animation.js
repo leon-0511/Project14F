@@ -34,7 +34,7 @@ const pageContent = [
                 personality, a little bit of me, that you can enjoy. This gift comes in the format of a treasure hunt, you are going to have to complete\
                 some (simple) quests, to discover 3 words which will complete the link needed to reach the actual gift.\n\n\
                 \
-                At the time of writing this part i haven't made them, but these three quests are a Cypher, a X and a Trivia, they'll be explained in the next\
+                At the time of writing this part i haven't made them, but these three quests are a Cypher, a Snake game (Snookie) and a Trivia, they'll be explained in the next\
                 pages. Hope you have fun mwehehehehe >:3."
           
       },
