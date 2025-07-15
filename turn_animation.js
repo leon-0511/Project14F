@@ -58,17 +58,21 @@ const pageContent = [
       },
       right: {
           title: "The Pookie Trivia",
-          text: "This is the last quest, a series of questions (a trivia) you gotta get correctly so you can get the last word needed to complete the link."
+          text: "This is the last quest, a series of questions (a trivia) you gotta get correctly so you can get the last word needed to complete the link.\n\
+                Now, i was thinking about what i could make these questions of, because making them about me feels a little egocentric, but making them about you\
+                is a little stupid since you'd know the answers easily, so i decided to make them about us, about the things we do together like games and such, hope you enjoy it >:3.\n",
+          link: "https://onlinegdb.com/xBq8G-Vy8",
+          linktext: "The Trivia"
       }
   },
   {
       left: {
-          title: "Page 5",
-          text: "Page 5: More pages ahead, with tons of cool content!"
+          title: "The End",
+          text: "If you are reading this page, you should already know the three words needed to complete the link, now, how do you complete the link? Well, you add them to the end of this:\
+           https://leon-0511.github.io/Project14F/\n\
+           For example, if the three words were 'cat', 'dog' and 'sheep', the link would be https://leon-0511.github.io/Project14F/catdogsheep.html. Make sure to add the html at the end"
       },
       right: {
-          title: "Page 6",
-          text: "Page 6: Almost there! You've been turning pages like a pro!"
       }
   }
 ];
