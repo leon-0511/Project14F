@@ -42,7 +42,7 @@ const pageContent = [
           title: "The Cypher Quest",
           text: "This one is pretty simple, just a warmup, i will give you a code in binary, and you gotta decypher it (translate it) to get the first word you need\
                 but there's a twist, because otherswise it would be a simple google search. The code is in reverse.\n\n\
-                This is the binary code:\n1001 1101 1100 0101 0110 0100 0111 0010 0011 1000 0110\n\n\
+                This is the binary code:\n10111101 10001010 10010001 10010001 10000110\n\n\
                 \
                 To decypher this code, you will have to first invert the ones and zeroes (swap ones for zeroes and zeroes for ones), and then use an online binary to text converter, i'll leave you a link to one below:\n",
           link: "https://www.rapidtables.com/convert/number/binary-to-ascii.html",
